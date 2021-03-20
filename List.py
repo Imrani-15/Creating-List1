@@ -1,75 +1,83 @@
-# Pratice on List Methods
-# Creating a list
-# Creating a empty list
-List = []
-print('Blank list')
-print(List)
-
-# Creating a number of list
-List1 = [10,20,30,40]
-print("\n List of numbers")
-print(List1)
-
-# Creating a list of strings and accessing using a index
-List2 = ["apple", "grapes", "papaya"]
-print("\n List of items")
-print(List2[1])
-print(List2[2])
-
-# Creating a nested list inside a list
-List3 = [["pg","college"],["school"]]
-print("\n Nested list inside a list:")
-print(List3)
-
-# Knowing size of the list
-# Creating a empty list
-list = []
-print(len(list)) #0
-
-# creating a number of list
-list1 = [10,20,30,40,50]
-print(len(list1)) #4
-
-#Adding a element to a list
-
-Add = []
-print("Initial blank list:")
-print(Add)
-
-# Using a append function and addition of elements in the list
-Add.append(20)
-Add.append(30)
-Add.append(40)
-print("\n Add after addition of three elements:")
-print(Add)
-
-# Adding element of the list using iterator
-List_itr = []
-for i in range(1,6):
-    List_itr.append(i)
-print("\n list after addition of elements from 1-5")
-print(List_itr)
-
-# Adding tuples to the list
-List_itr.append((5,6))
-print("\n List after Addition of a tuple:")
-print(List_itr)
-
-# Addition of list to a list
-L_I = ['ink','pen']
-Add.append(L_I)
-print("\n list after addition of the list:")
-print(Add)
-
-# using a insert function
-# creating a list
-L1 = [1,2,3,4,5,6]
+# Using extend function
+list = [10,'uma','naga',30,40]
 print("\n Initial list:")
-print(L1)
+print(list)
 
-# Addition of element at specific position using insert method
-L1.insert(4,20)
-L1.insert(0,100)
-print("\n list after performing insert operation:")
-print(L1)
+# addition of multiple elements to the list at the end using extend method
+list.extend([5,'durga','geeks',15])
+print("\n list after perfoming extend operations:")
+print(list)
+
+# using index of the list
+l1 = [15,22,55,21,62]
+# accessing a element from the list using index number
+print(l1[2])
+print(l1[3])
+print(l1[0])
+
+#creating a multi demensional list by using  nested a list inside a list
+l2 = [['guntur','andhra','hyd'],['goa','karnataka']]
+# accessing a element from the multidemsional list using index numbers
+print("\n acessing a element from the a multi dimensional list")
+print(l2[0][2])
+print(l2[1][0])
+
+#negative indexing
+
+List1 = [1, 11.01, 'dog', 'donk_john', True]
+print("Accessing element using negative index")
+print(List1[-1])
+print(List1[-4])
+
+# Remove element from the list
+list1 = []
+for i in range(0,10):
+    list1.append(i)
+print(list1)
+# Removing elements from list using remove() method
+list1.remove(9)
+list1.remove(5)
+print("\n list after remove of two elements")
+print(list1)
+
+# Removing element from list using iterator method
+for i in range(0,4):
+    list1.remove(i)
+print("\n list after removing a range of elements:")
+print(list1)
+
+# Remove element from the list by using pop() function
+li = [1,2,3,4,5]
+print("\n Initial list:")
+print(li)
+# using a pop method and remove the element form the list
+li.pop()
+print("\n list after popping an element:")
+print(li)
+
+# Removing element at a specific location from the set using the pop() method
+li.pop(0)
+print("\n list after popping a spicific elements:")
+print(li)
+
+# using slicing of list
+sli = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+print("\n Initial List:")
+print(sli)
+
+sliced_list = sli[2:5]
+print("\n slicing element in the range of 2-5:")
+print(sliced_list)
+
+sliced_list = sli[:]
+print("\n printing all elements using slice operation:")
+print(sliced_list)
+
+sliced_list = sli[::-1]
+print("\n printing all elements display reverse using slice operation:")
+print(sliced_list)
+
+
+
+
 
