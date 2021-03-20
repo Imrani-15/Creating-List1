@@ -1,24 +1,10 @@
 # Pratice on List Methods
+# Knowing size of the list
+# Creating a empty list
+list = []
+print(len(list))
 
-# Creating List
-List = []
-print("Blanck List:")
-print(List)
+# creating a number of list
+list1 = [10,20,30,40,50]
+print(len(list1))
 
-# Creating list of numbers
-List1 = [10,20,30]
-print("\n List of numbers:")
-print(List1)
-
-# Creating a List of strings and accessing
-# using index
-List2 = ["apple","banana", "grapes"]
-print("\n items of list")
-print(List2[0])
-print(List2[2])
-
-# Creating a Multi-Dimensional List
-# (By Nesting a list inside a List)
-List3 = [['PG', 'College'], ['school']]
-print("\n Multidemensional List:")
-print(List3)
